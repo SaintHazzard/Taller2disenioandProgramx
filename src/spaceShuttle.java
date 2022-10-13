@@ -5,25 +5,31 @@ public class spaceShuttle extends classpacecraft implements methodSpacecraft {
         this.tripulation = false;
     }
 
-    
-
     @Override
     public boolean checkedForTakeoff(String weather) {
-            
-        if (weather == "Clear" && houstonAprove()) {
+
+        if ("Clear".equalsIgnoreCase(weather) && houstonAprove()) {
             ignitionSecuence();
             takeoff();
+            return true;
         } else {
-            // abortingSecuence();
+            dontStartSecuence();
         }
         return false;
     }
 
-    
+    @Override
+    public void objetiveMission() {
+        System.out.println("Carry cargo into space");
+    }
 
-
-
-
-    
-    
+    public void dontStartSecuence() {
+        System.out.println("Houston deny sequence start");
+    }
 }
+
+
+    
+
+
+

@@ -35,7 +35,7 @@ public abstract class classpacecraft {
 
     public boolean houstonAprove() {
         System.out.print("Houston aprove start count secuence? Y/N: ");
-        houstonAproveR = sn.nextLine();
+        houstonAproveR = sn.next();
         if ("Y".equalsIgnoreCase(houstonAproveR)) {
             return true;
         } else {
