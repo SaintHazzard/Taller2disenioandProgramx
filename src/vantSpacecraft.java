@@ -1,16 +1,17 @@
 
 public abstract class vantSpacecraft {
-    public String typeSpacecraft, country; 
+    public String typeSpacecraft, typeFuel, country; 
     public int capacity, pushPower, weight;
     public boolean tripulation;
     String houstonAproveR;
     
 
-    protected vantSpacecraft(String typeSpacecraft, int pushPower, int weight, String country) {
+    protected vantSpacecraft(String typeSpacecraft, int pushPower, int weight, String typeFuel, String country) {
         this.typeSpacecraft = typeSpacecraft;
         this.tripulation = true;
         this.pushPower = pushPower;
         this.weight = weight;
+        this.typeFuel = typeFuel;
         this.country = country;
     }
 
@@ -26,5 +27,10 @@ public abstract class vantSpacecraft {
             i--;
         }
     }
+
+
+
+
+
     
 }

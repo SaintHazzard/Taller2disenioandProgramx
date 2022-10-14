@@ -1,4 +1,6 @@
+
 import java.util.Scanner;
+
 
 public abstract class classpacecraft {
     public String typeSpacecraft, typeFuel, country; 
@@ -53,11 +55,17 @@ public abstract class classpacecraft {
         }
     }
     
-public void takeoff() {
-        System.out.println("The " + typeSpacecraft + " is taking off");
+    public void takeoff() {
+        System.out.println("The " + typeSpacecraft + " is taking off at " + java.time.LocalDateTime.now());
 
     }
 
+    @Override
+    public String toString() {
+        return typeSpacecraft + " with " + pushPower + " Kg of push and its fuel is " + typeFuel + " of the country" + country;
+    }
+
+    
     
 
 }

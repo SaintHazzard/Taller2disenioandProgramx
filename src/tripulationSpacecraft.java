@@ -35,7 +35,7 @@ public class tripulationSpacecraft extends classpacecraft implements methodSpace
     @Override
     public boolean checkedForTakeoff(String weather) {
         
-        if ("Clear".equalsIgnoreCase(weather) && houstonAprove() && tripulationAprove()) {
+        if ("y".equalsIgnoreCase(weather) && houstonAprove() && tripulationAprove()) {
             ignitionSecuence();
             takeoff();
         } else {

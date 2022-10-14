@@ -8,7 +8,7 @@ public class spaceShuttle extends classpacecraft implements methodSpacecraft {
     @Override
     public boolean checkedForTakeoff(String weather) {
 
-        if ("Clear".equalsIgnoreCase(weather) && houstonAprove()) {
+        if ("y".equalsIgnoreCase(weather) && houstonAprove()) {
             ignitionSecuence();
             takeoff();
             return true;
@@ -26,6 +26,10 @@ public class spaceShuttle extends classpacecraft implements methodSpacecraft {
     public void dontStartSecuence() {
         System.out.println("Houston deny sequence start");
     }
+
+    
+
+    
 }
 
 
