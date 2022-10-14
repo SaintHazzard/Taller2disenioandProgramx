@@ -13,7 +13,10 @@ public class vantMaintenance extends vantSpacecraft implements methodSpacecraft 
         // TODO Auto-generated method stub
         return false;
     }
-
+    
+    /**
+     * Ship's mission to accomplish
+     */
     @Override
     public void objetiveMission() {
         System.out.println("The " + typeSpacecraft + " is doing its maintenance objetive");        

@@ -3,7 +3,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Scanner;
 
-
+/*
+ * Represents the abstract main class, SUPERCLASS
+ */
 public abstract class classpacecraft {
     public String typeSpacecraft, typeFuel, country; 
     public int capacity, pushPower, weight;

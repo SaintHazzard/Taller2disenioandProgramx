@@ -44,7 +44,10 @@ public class tripulationSpacecraft extends classpacecraft implements methodSpace
         }
     }
 
-
+    /**
+     * @param weather weather condition for approves take off
+     * @return true If the whole list is OK
+     */
     @Override
     public boolean checkedForTakeoff(String weather) {
         
@@ -58,7 +61,9 @@ public class tripulationSpacecraft extends classpacecraft implements methodSpace
         return false;
     }
 
-
+    /**
+     * Ship's mission to accomplish
+     */
     @Override
     public void objetiveMission() {
         System.out.println("take the crew to their target location");

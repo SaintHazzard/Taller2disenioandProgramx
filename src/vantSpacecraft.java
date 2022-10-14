@@ -1,4 +1,6 @@
-
+/*
+ * Main class for no tripulated spacecraft
+ */
 public abstract class vantSpacecraft {
     public String typeSpacecraft, typeFuel, country; 
     public int capacity, pushPower, weight;

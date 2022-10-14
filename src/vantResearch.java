@@ -23,16 +23,21 @@ public class vantResearch extends vantSpacecraft implements methodSpacecraft {
         System.out.println(typeSpacecraft + "is in lower usage. Stany mode ON.");
     }
 
-
+    /*
+     * Starting ship's mission
+     */
     @Override
     public boolean checkedForTakeoff(String weather) {
         if ("Y".equalsIgnoreCase(weather) && houstonAprove()) {
-            System.out.println("Starting mission");
+            System.out.println("Starting mission...");
             newCalibration();
         }
         return false;
     }
     
+    /**
+     * Approves houston Ship's mission?
+     */
     public boolean houstonAprove() {
         System.out.print("Houston aprove start mision secuence? Y/N: ");
         houstonAproveR = sn.next();
@@ -43,7 +48,9 @@ public class vantResearch extends vantSpacecraft implements methodSpacecraft {
         }
     }
 
-
+    /**
+     * Ship's mission to accomplish
+     */
     @Override
     public void objetiveMission() {
         System.out.println(typeSpacecraft + " is focusing early universe");
