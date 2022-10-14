@@ -9,10 +9,16 @@ public class vantResearch extends vantSpacecraft implements methodSpacecraft {
     }
     
 
+    /**
+     * ATV research execute tasks
+     */
     public void newCalibration() {
         System.out.println(typeSpacecraft + "is calibrating its sensors and mirrors.");
     }
     
+    /**
+     * ATV research execute tasks
+     */
     public void stanbyCharge() {
         System.out.println(typeSpacecraft + "is in lower usage. Stany mode ON.");
     }
@@ -40,7 +46,7 @@ public class vantResearch extends vantSpacecraft implements methodSpacecraft {
 
     @Override
     public void objetiveMission() {
-        System.out.println(typeSpacecraft + "is focusing early universe");
+        System.out.println(typeSpacecraft + " is focusing early universe");
         
     }
 }

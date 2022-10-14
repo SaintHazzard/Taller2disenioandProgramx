@@ -10,21 +10,34 @@ public class tripulationSpacecraft extends classpacecraft implements methodSpace
         this.capacity = 0;
     }
 
-
+    /*
+     * max capacity for spacecraft
+     */
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
     
 
+    /**
+     * Drop boths rocker shuttle when spacecraft get altitude over 120 miles
+     */
     public void dropRockerShuttle() {
         int altitude = 0;
         while (altitude <= 120) {
             altitude = altitude + 10;
             try {
-                Thread.sleep(300);
-                System.out.println("Current altitude " + altitude);
+                Thread.sleep(800);
+                System.out.println("Current altitude " + altitude + " miles");
                 if (altitude > 120) {
-                System.out.println("Start secuence for drop rockets shuttle");}
+                    System.out.println("Start secuence for drop rockets shuttle...");
+                    System.out.println(
+                            "****************************************************************************************************");
+                    System.out.println(
+                            "****************************************************************************************************");
+                            System.out.println(
+                            "****************************************************************************************************");
+                }
+                
             } catch (Exception e) {
                 System.err.println(e);
             }
@@ -38,6 +51,7 @@ public class tripulationSpacecraft extends classpacecraft implements methodSpace
         if ("y".equalsIgnoreCase(weather) && houstonAprove() && tripulationAprove()) {
             ignitionSecuence();
             takeoff();
+            dropRockerShuttle();
         } else {
         System.out.println("Something is going wrong, deny sequence start");
     }
